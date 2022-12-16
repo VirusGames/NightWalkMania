@@ -1,0 +1,142 @@
+{
+	"levelcreator": "Nintendo",
+	"songcreator": "Tsunku",
+	"version" : 1.0,
+	"bpm" : 126,
+	"beatparts" : 4,
+	"end" : -1,
+	"jumps": [],
+	"random": [],
+	"skillstar": -1,
+	"states" : [
+		{
+			"beat": 0,
+			"state": "CanInput",
+			"extra": ["false"]
+		},
+		{
+			"beat": 0,
+			"state": "Dialog",
+			"extra": ["Hello there", "Let's do a little night walk", "Press J to jump", "3"]
+		},
+		{
+			"beat": 0,
+			"state": "WaitDialog",
+			"extra": []
+		},
+		{
+			"beat": 0,
+			"state": "PlayMusic",
+			"extra": ["0", "false", "false"]
+		},
+		{
+			"beat": 2,
+			"state": "CountIn",
+			"extra": []
+		},
+		{
+			"beat": 4,
+			"state": "StartMoving",
+			"extra": ["10"]
+		},
+		{
+			"beat": 0,
+			"state": "WaitUntil",
+			"extra": ["10", "4"]
+		},
+		{
+			"beat": 0,
+			"state": "PlayMusic",
+			"extra": ["1", "false", "true", "32"]
+		},
+		{
+			"beat": 0,
+			"state": "CanInput",
+			"extra": ["true"]
+		},
+		{
+			"beat": 0,
+			"state": "WaitScore",
+			"extra": ["15", "3"]
+		},
+		{
+			"beat": 0,
+			"state": "PlayMusic",
+			"extra": ["0", "true", "false"]
+		},
+		{
+			"beat": 0,
+			"state": "CanInput",
+			"extra": ["false"]
+		},
+		{
+			"beat": 0,
+			"state": "Dialog",
+			"extra": ["Yeah, like that.", "Beware of holes ahead!", "4"]
+		},
+		{
+			"beat": 0,
+			"state": "WaitDialog",
+			"extra": []
+		},
+		{
+			"beat": 0,
+			"state": "Ending",
+			"extra": ["MainGame"]
+		}
+	],
+	"jumpstypes":[
+		{
+			"beat": 0,
+			"state": "JumpFlower1"
+		},
+		{
+			"beat": 1,
+			"state": "JumpFlower1"
+		},
+		{
+			"beat": 2,
+			"state": "JumpFlower1"
+		},
+		{
+			"beat": 9,
+			"state": "JumpFlower1"
+		}
+	],
+	"sayer": "The stars say",
+	"tryagain":
+	[
+		"You fell in a hole.",
+		"",
+		"Try harder next time."
+	],
+	"ok":
+	[
+		"Night sky walks are so fun."
+	],
+	"superb":
+	[
+		"You made it to the end!",
+		"You kept the beat well!",
+		"The stars welcome you!"
+	],
+	"_comment":[
+	"//0 - count in",
+	"//0-8 - \"Jump by riding the music!\"",
+	"//8 - 7 flowers 1 lollipop",
+	"//32 - 7 flowers 1 umbrella",
+	"//40 - 3 flowers 1 lollipop",
+	"//68 - 2 flowers 1 lollipop 1 umbrella",
+	"//72 - 2 flowers 2 lollipop",
+	"//72-104 - \"Fill the sky with stars before the end!\"",
+	"//104 - 3 lollipop 1 umbrella",
+	"//108 - 2 flowers 2 lollipop",
+	"//140 - 3 lollipop 1 umbrella",
+	"//144 - 2 flowers 2 lollipop",
+	"//144-159 - \"It's almost over!\"",
+	"//172 - 4 lollipop",
+	"//176 - end",
+	"//177-182 - boxes dissapper"
+	]
+}
+

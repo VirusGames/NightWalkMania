@@ -1,0 +1,29 @@
+{
+    "levelcreator": "Me",
+    "songcreator": "Tsunku",
+    "bpm": 0.0,
+    "beatparts": 0.0,
+    "end": 999.0,
+    "jumps": [
+        1.0,
+        2.0,
+        3.0
+    ],
+    "random": [
+        {
+            "list": [
+                1.0,
+                2.0,
+                3.0
+            ]
+        },
+        {
+            "list": [
+                1.0,
+                2.0,
+                3.0
+            ]
+        }
+    ],
+    "skillstar": 143
+}

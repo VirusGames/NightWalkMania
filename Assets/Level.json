@@ -1,0 +1,135 @@
+{
+	"levelcreator": "Nintendo",
+	"songcreator": "Tsunku",
+	"version" : 1.0,
+	"bpm" : 126,
+	"beatparts" : 4,
+	"end" : 189,
+	"jumps": [19, 27, 35, 43, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 128, 129, 130, 132, 133, 134, 136, 137, 138, 139, 140, 141, 142, 143, 172, 173, 174, 175, 180, 181, 182],
+	"random": [{"list": [44,108]},{"list": [148,172]}],
+	"skillstar": 147,
+	"states" : [
+		{
+			"beat": 4,
+			"state": "CountIn",
+			"extra": []
+		},
+		{
+			"beat": 4,
+			"state": "Comment",
+			"extra": ["Jump by riding the music!", "8"]
+		},
+		{
+			"beat": 6,
+			"state": "StartMoving",
+			"extra": ["0"]
+		},
+		{
+			"beat": 76,
+			"state": "Comment",
+			"extra": ["Fill the sky with stars before the end!", "32"]
+		},
+		
+		{
+			"beat": 148,
+			"state": "Comment",
+			"extra": ["It's almost over!", "15"]
+		},
+		{
+			"beat": 181,
+			"state": "BoxesDissapper",
+			"extra": []
+		}
+		
+	],
+	"jumpstypes":[
+		{
+			"beat": 12,
+			"state": "JumpFlowerLollipop8"
+		},
+		{
+			"beat": 36,
+			"state": "JumpFlowerUmbrella8"
+		},
+		{
+			"beat": 44,
+			"state": "JumpFlowerLollipop4"
+		},
+		{
+			"beat": 72,
+			"state": "JumpFlowerLollipopUmbrella4"
+		},
+		{
+			"beat": 76,
+			"state": "JumpFlowerLollipop2"
+		},
+		{
+			"beat": 108,
+			"state": "JumpLollipopUmbrella4"
+		},
+		{
+			"beat": 112,
+			"state": "JumpFlowerLollipop2"
+		},
+		{
+			"beat": 144,
+			"state": "JumpLollipopUmbrella4"
+		},
+		{
+			"beat": 148,
+			"state": "JumpFlowerLollipop2"
+		},
+		{
+			"beat": 176,
+			"state": "JumpLollipop1"
+		},
+		{
+			"beat": 180,
+			"state": "JumpEnd1"
+		},
+		{
+			"beat": 181,
+			"state": "JumpNone1"
+		},
+		{
+			"beat": 182,
+			"state": "JumpStop1"
+		}
+	],
+	"sayer": "The stars says",
+	"tryagain":
+	[
+		"You fell in a hole.",
+		"",
+		"Try harder next time."
+	],
+	"ok":
+	[
+		"Night sky walks are so fun."
+	],
+	"superb":
+	[
+		"You made it to the end!",
+		"You kept the beat well!",
+		"The stars welcome you!"
+	],
+	"_comment":[
+	"//0 - count in",
+	"//0-8 - \"Jump by riding the music!\"",
+	"//8 - 7 flowers 1 lollipop",
+	"//32 - 7 flowers 1 umbrella",
+	"//40 - 3 flowers 1 lollipop",
+	"//68 - 2 flowers 1 lollipop 1 umbrella",
+	"//72 - 2 flowers 2 lollipop",
+	"//72-104 - \"Fill the sky with stars before the end!\"",
+	"//104 - 3 lollipop 1 umbrella",
+	"//108 - 2 flowers 2 lollipop",
+	"//140 - 3 lollipop 1 umbrella",
+	"//144 - 2 flowers 2 lollipop",
+	"//144-159 - \"It's almost over!\"",
+	"//172 - 4 lollipop",
+	"//176 - end",
+	"//177-182 - boxes dissapper"
+	]
+}
+
