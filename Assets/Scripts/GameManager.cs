@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public string json;
 
-    //это объекты, хотя только один из них объект, но пох
+    //это объекты, хотя только один из них объект, но nah
     [Header("Objects")]
     public Conductor conductor;
     private Animator anim;
@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
         //если бит кратен 6, то можно чё-нить сделать
         if (conductor.onBeat||checkImmediately)
         {
-            // if (conductor.songPosBeat == 0.66667) Debug.Log("lick my balls");
+            // if (conductor.songPosBeat == 0.66667) Debug.Log("Кротовуха");
 
             if(checkImmediately)
                 conductor.songPosBeat = 0;
@@ -348,7 +348,7 @@ public class GameManager : MonoBehaviour
                     }
     }
 
-    public string ShittyJumpSystemTM(float beat, float input)
+    public string ShittyJumpSystemTM(float beat, float input) //[absolutely] FREE!!!!1!!1!
     {
         float diff = beat-input;
         float absDiff = Mathf.Abs(diff);
@@ -403,7 +403,7 @@ public class GameManager : MonoBehaviour
         playerScript.Jump();
     }
     
-    private IEnumerator CountIn(float beat)
+    private IEnumerator CountIn(float beat) //my code really lacks of comments
     {
         for(int i=0; i<2; i++)
         {

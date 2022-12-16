@@ -186,7 +186,7 @@ public class Conductor : MonoBehaviour
     {
         // Debug.Log($"{lastReportedBeat}, {songPositionInBeats}");
 
-        //честно, хер его знает, что тут происходит. Я попытался поменять, но всё вышло плачевно
+        //честно, хрен его знает, что тут происходит. Я попытался поменять, но всё вышло плачевно
         if (lastReportedBeat != 0)
         {
             if (lastReportedBeat < songPositionInBeats)

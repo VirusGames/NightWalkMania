@@ -147,7 +147,7 @@ public class ScorManager : MonoBehaviour
         fillSound.Play();
         while(fillSound.time<fillSound.clip.length/100*score)
         {
-            fill.size = new Vector2(speed*fillSound.time, 0.32f);
+            fill.size = new Vector2(speed*fillSound.time, 0.32f); //this was hard
             innerScore = 100/fillSound.clip.length*fillSound.time;
             scoreText.text = Mathf.Floor(innerScore).ToString();
             if(Input.GetButtonDown("Fire1"))
@@ -157,7 +157,7 @@ public class ScorManager : MonoBehaviour
         scoreText.text = score.ToString();
         fill.size = new Vector2(speed*fillSound.clip.length/100*score, 0.32f);
         fillSound.Stop();
-        if(score>PlayerPrefs.GetInt("Max Score", 0))
+        if(score>PlayerPrefs.GetInt("Max Score", 0)) //what, is this working?
         {
             PlayerPrefs.SetInt("Max Score", score);
             PlayerPrefs.Save();
