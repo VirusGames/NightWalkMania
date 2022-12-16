@@ -7,7 +7,7 @@ Fun fact: this game is part of my school project. Isn't it cool?
 
 There won't be editor. I have no idea how to do it...
 
-*Parts of the code are stolen from Spaceball Mania by Starpelly [https://github.com/Starpelly/SpaceballMania] and old version of Heaven Studio by Jenny Crowe [https://github.com/megaminerjenny/HeavenStudio] and modified.
+*Parts of the code are stolen from Spaceball Mania by Starpelly [https://github.com/Starpelly/SpaceballMania] and old version of the Heaven Studio by Jenny Crowe [https://github.com/megaminerjenny/HeavenStudio] and modified.
 
 Everything is property of Nintendo. Made only on strong love for Rhythm Heaven.
 
@@ -21,3 +21,5 @@ Misses can mess with jump types
 A lag on first beat of song
 
 Bad score system
+
+Bad star movement
