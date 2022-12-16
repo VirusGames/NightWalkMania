@@ -9,6 +9,8 @@ There won't be editor. I have no idea how to do it...
 
 *Parts of the code are stolen from Starpelly's Spaceball Mania [https://github.com/Starpelly/SpaceballMania] and Rhyhtm Heaven Mania [https://github.com/Starpelly/RhythmHeavenMania] and modified.
 
+Everything is property of Nintendo. Made only on strong love for Rhythm Heaven.
+
 # Known issues
 First input is miss in practice
 
