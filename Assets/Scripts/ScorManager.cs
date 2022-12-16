@@ -10,6 +10,7 @@ public class ScorManager : MonoBehaviour
     public string result;
     public Sprite[] screens = new Sprite[3];
     public AudioClip[] musicList = new AudioClip[10];
+    private SpriteRenderer capsule;
     public TMP_Text sayer;
     public TMP_Text ranks;
     public TMP_Text grade;
@@ -123,7 +124,8 @@ public class ScorManager : MonoBehaviour
         else
             Debug.Log("perfect");
         ranks.text = output;
-        sayer.gameObject.SetActive(false);
+        capsule = sayer.GetComponentInParent<SpriteRenderer>();
+        capsule.gameObject.SetActive(false);
         ranks.gameObject.SetActive(false);
         grade.gameObject.SetActive(false);
         picture.gameObject.SetActive(false);
@@ -135,7 +137,7 @@ public class ScorManager : MonoBehaviour
         float speed = 2.56f/fillSound.clip.length;
         float innerScore = 0; 
         yield return new WaitForSeconds(1);
-        sayer.gameObject.SetActive(true);
+        capsule.gameObject.SetActive(true);
         audioManager.Play("first");
         yield return new WaitForSeconds(1.25f);
         ranks.gameObject.SetActive(true);

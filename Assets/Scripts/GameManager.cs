@@ -421,7 +421,8 @@ public class GameManager : MonoBehaviour
         }
         yield return new WaitUntil(() => conductor.beatPosition<=beat+0.7);
         StartCoroutine(ballonns[6].Blow());
-        playerScript.anim.Play("Walking");
+        if(playerScript.anim.GetCurrentAnimatorStateInfo(0).IsName("fly"))
+            playerScript.anim.Play("Walking");
     }
 
     private IEnumerator ShowComment(float beat, List<string> extra)
@@ -588,7 +589,7 @@ public class GameManager : MonoBehaviour
     {
         for(int i=0; i<8; i++)
             boxes[i].isMoving = false;
-        int num = currentBox-2;
+        int num = currentBox-3;
         if(num<0)
             num+=8;
         //Debug.Log(num.ToString()+"/"+beat.ToString());
@@ -630,8 +631,8 @@ public class GameManager : MonoBehaviour
         playerScript.anim.Play("HangStart");
         for(int i=0; i<8; i++)
             boxes[i].isMoving = false;
-        yield return new WaitUntil(() => conductor.songPosBeat==beat+0.25);
-        StartCoroutine(BoxesDisappear(beat+0.25f));
+        yield return new WaitUntil(() => conductor.songPosBeat==beat+1);
+        StartCoroutine(BoxesDisappear(beat+1f));
         yield return new WaitUntil(() => conductor.songPosBeat==beat+2);
         StartCoroutine(SHUTUP());
         StartCoroutine(playerScript.Fall());

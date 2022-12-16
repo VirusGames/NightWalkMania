@@ -36,7 +36,7 @@
 			"extra": ["It's almost over!", "15"]
 		},
 		{
-			"beat": 181,
+			"beat": 182,
 			"state": "BoxesDissapper",
 			"extra": []
 		}

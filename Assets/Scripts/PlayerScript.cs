@@ -33,7 +33,7 @@ public class PlayerScript : MonoBehaviour
     public IEnumerator FlyEnd()
     {
         anim.Play("flyEnd");
-        double beat = conductor.songPosBeat+9;
+        double beat = conductor.songPosBeat+11;
         float speed = (5-transform.position.y)/conductor.secPerRealBeat/9;
         while(conductor.songPosBeat!=beat)
         {
