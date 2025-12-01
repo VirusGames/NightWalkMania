@@ -285,7 +285,7 @@ public class GameManager : MonoBehaviour
                     {
                         string animState = myStatesList.states[i].state;
 
-                        //этот перебор нужен, так как в states у нас 2 параметра
+                        //этот перебор нужен, так как в states у нас 2 параметра. Это через switch надо сделать, но мне лень менять код 3 летней давности
                         if (myStatesList.states[i].beat == lastCheckedBeat)
                         {
                             //Debug.Log(animState);
